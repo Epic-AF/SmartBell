@@ -1,11 +1,13 @@
-from pushbullet import pushbullet
+from pushbullet import Pushbullet
+
 import datetime
 import RPi.GPIO as GPIO
 
 GPIO.setup(23,GPIO.IN)
 GPIO.setup(7,GPIO.out)
 
-pb = pushbullet(Api key)
+apiKey = "o.giFKbcb02CDCluBRGLZ9q5VwSXC6fWGz"
+pb = Pushbullet(apiKey)
 
 push = pb.push_note('System is live')
 
