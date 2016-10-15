@@ -14,7 +14,8 @@ pb = Pushbullet(apiKey)
 push = pb.push_note('System is live', "chod")
 
 while True:
-    if GIPO.input(23):
+    input_state = GPIO.input(23)
+    if input_state == False:
         push = pb.push_note('Door bell at ', str(datetime.datetime.now())[:16])
         GPIO.output(7,1)
     else:
