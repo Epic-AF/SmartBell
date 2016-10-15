@@ -15,7 +15,7 @@ push = pb.push_note('System is live', "chod")
 
 while True:
     input_state = GPIO.input(23)
-    if input_state == False:
+    if input_state == True:
         push = pb.push_note('Door bell at ', str(datetime.datetime.now())[:16])
         GPIO.output(7,1)
     else:
