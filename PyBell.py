@@ -3,6 +3,9 @@ from pushbullet import Pushbullet
 import datetime
 import RPi.GPIO as GPIO
 
+# for GPIO numbering, choose BCM
+GPIO.setmode(GPIO.BCM)
+
 GPIO.setup(23,GPIO.IN)
 GPIO.setup(7,GPIO.out)
 
