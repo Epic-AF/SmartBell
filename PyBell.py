@@ -7,7 +7,7 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(23,GPIO.IN)
-GPIO.setup(7,GPIO.out)
+GPIO.setup(7,GPIO.OUT)
 
 apiKey = "o.giFKbcb02CDCluBRGLZ9q5VwSXC6fWGz"
 pb = Pushbullet(apiKey)
