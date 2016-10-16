@@ -18,8 +18,10 @@ while True:
     if input_state == True:
         push = pb.push_note('Door bell at ', str(datetime.datetime.now())[:16])
         GPIO.output(7,1)
+        time.sleep(0.2)
     else:
         print 'nothing'
         GPIO.output(7,0)
+        time.sleep(0.2)
 GPIO.cleanup()
 
