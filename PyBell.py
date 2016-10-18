@@ -10,7 +10,7 @@ GPIO.setup(7,GPIO.OUT)
 
 count = 0.0
 
-apiKey = "o.giFKbcb02CDCluBRGLZ9q5VwSXC6fWGz"
+apiKey = "Api_goes_here"
 pb = Pushbullet(apiKey)
 
 push = pb.push_note('System is live', "Working...")
